@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*Formatando o corpo*/
+body{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url("../imagens/img-adm01.jpg");
+}
+
+/*Formatando unidade herói*/
+.hero-unit{
+    background-image: url("../imagens/img-adm.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border: 8px solid white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+.hero-unit h1{
+    text-shadow: 10px 10px 10px rgba(0,0,0,.4);
+}
+
+
+
+

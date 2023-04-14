@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* formatando span8 */
+.bloco1{
+    padding: 20px;
+}
+/* formatando span4 */
+aside.bloco2 {
+    padding: 20px;
+}
+/* formatando corpo */
+body{
+    padding-top: 26px;
+}
+p{
+    text-align: justify;
+}
+/* formatando logo e o topo */
+.topo {
+    background-color: #333;
+    color: #f8f8f8;
+}
+.logo{
+    padding: 20px;
+}
+figure.logo{
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+header.topo h1{
+    padding-top: 10px;
+}
+/* formatando audio e video */
+div#tv-radio{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../imagens/radio-tv.png") no-repeat;
+}
+audio#musica{
+    display: block;
+    position: relative;
+    left: 482px;
+    top: 485px;
+    width: 300px;
+}
+
+video#filme{
+    display: block;
+    position: relative;
+    left: 100px;
+    top: 85px;
+    width: 440px;
+}
+/* formatando span rede social */
+img.social {
+    width: 80px;
+    height: 80px;
+    float: left;
+    opacity: 0.9;
+    padding-left: 3.5px;
+}
+/* formatando rodapé */
+.bgrodape {
+    background-color: #333;
+    color: #f8f8f8;
+}
+.copy{
+    text-align: center;
+}
+.seta{
+    width: 40px;
+    height: 40px;
+}
+figure.rodape{
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+/* formatando placeholder */
+::-webkit-input-placeholder { font-style:italic; }
+::-moz-placeholder { font-style:italic; } /* firefox 19+ */
+:-ms-input-placeholder { font-style:italic; } /* ie */
+input:-moz-placeholder { font-style:italic; }

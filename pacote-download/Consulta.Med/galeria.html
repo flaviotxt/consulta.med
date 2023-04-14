@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/img-med-ico.ico"/>
+
+    <title>Consulta.Med</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/galeria.css"/>>
+    <!-- BOOTSTRAP JS e JQuery-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    <!-- Começo Menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+
+                <!-- .btn-navbar é usado como alternador para conteúdo de barra de navegação colapsável -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- Tudo que você queira escondido em 940px ou menos, coloque aqui -->
+                <div class="nav-collapse collapse">
+
+                    <!-- .nav, .navbar-search, .navbar-form, etc -->
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html">Início</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active btn-inverse" data-toggle="dropdown">
+                                Galeria
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="galeria.html" >SlideShow e Fotos<br/> de medicamentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Multimídia
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="multimidia.html">Audio e Vídeo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tabela-produto.html">Tabela de Produtos</a></li>
+                        <li><a href="contato.html">Entre em contato</a></li>
+                    </ul>
+                    <form action="#" class="navbar-search pull-right">
+                        <div class="input-append">
+                            <a href="login.html" class="brand"><small>Logoff</small></a>
+                            <input type="search" results="10" class="form-search" placeholder="Procurando algo?"/>
+                            <button class="btn btn-inverse">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim Menu -->
+    <!-- Começo Topo -->
+    <header class="container-fluid jumbotron subhead topo">
+        <figure class="logo">
+            <img src="imagens/logo.jpg" alt="Foto-Logo" class="img-circle">
+        </figure>
+        <div>
+            <hgroup>
+                <h1>Consulta.Med</h1>
+                <h3 class="hidden-phone">A sua consulta de medicamentos diária!</h3>
+            </hgroup>
+        </div>
+    </header>
+    <!-- Fim Topo --><!-- Fim Topo -->
+
+    <!-- Começo do carrossel -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span8">
+                <ul class="breadcrumb">
+                    <li class="">Galeria <span class="divider">/</span></li>
+                    <li class="active">Slideshow e Fotos de medicamentos</li>
+                </ul>
+                <section id="slide">
+                    <header class="page-header">
+                        <h1>Medicamentos -<small> com muitas variedades </small></h1>
+                    </header>
+                    <section class="carousel slide" id="carrossel">
+                        <div class="carousel-inner">
+                            <section class="active item"><img src="imagens/slide/img-01.jpg" alt="imagem01"/>
+                                <div class="carousel-caption">
+                                    <h4>Genéricos EMS</h4>
+                                    <p>Cuidando do brasil</p>
+                                </div>
+                            </section>
+                            <section class="item"><img src="imagens/slide/img02.jpg" alt="imagem2"/>
+                                <div class="carousel-caption">
+                                    <h4>Panpharma</h4>
+                                    <p>Distribuidora de medicamentos</p>
+                                </div>
+                            </section>
+                            <section class="item"><img src="imagens/slide/img03.jpg" alt="img3"/>
+                                <div class="carousel-caption">
+                                    <h4>Genéricos do Brasil</h4>
+                                    <p>O diferencial do consumidor</p>
+                                </div>
+                            </section>
+                        </div>
+                        <a href="#carrossel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                        <a href="#carrossel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+                    </section>
+                </section>
+
+                <!-- galeria de imagens -->
+                <section id="corpo-full">
+                    <article id="noticia-principal">
+                        <header id="cabecalho-artigo" class="page-header">
+                            <hgroup>
+                                <h1>Galeria de Imagens</h1>
+                                <h3>Fotos</h3>
+                            </hgroup>
+                            <p>Veja na nossa galeria de fotos várias belas imagens. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+                            <ul id="album-fotos">
+                                <li id="foto01"><span>Salompas</span></li>
+                                <li id="foto02"><span>Genéricos Néo Química</span></li>
+                                <li id="foto03"><span>Histamin</span></li>
+                            </ul>
+                        </header>
+                    </article>
+                </section>
+            </div>
+            <!-- Fim Chamada-->
+            <!-- Começo Lateral-->
+
+
+            <aside class="span4 bloco2" >
+                <div class="alert alert-warning social">
+                    <h1>Redes Sociais</h1>
+                    <a href="https://www.facebook.com/FlavioADSFA" target="_blank" title="Facebook"><img src="imagens/facebook1.png" alt="Facebook" class="social"></a>
+                    <a href="https://twitter.com/flavio_FAT" target="_blank"><img src="imagens/twitter1.png" alt="Twitter" title="Twitter" class="social"></a>
+                    <br /><br /><br /><br />
+                </div>
+
+                <div class="alert alert-success lateral">
+                    <h1>Onde Estou!</h1><br />
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3934.284681464532!2d-35.826381999999995!3d-9.570710199999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7014980b037d897%3A0xf61dd3fc81108897!2sR.+J%C3%BAlio+Felismino%2C+Satuba+-+AL%2C+57120-000!5e0!3m2!1spt-BR!2sbr!4v1428181672779"
+                    width="350" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0"></iframe></p>
+                </div>
+
+                <div class="alert alert-info lateral">
+                    <h1>Últimos Artigos</h1>
+                        <p><a href="http://educacao.estadao.com.br/noticias/geral,brasileiro-sofre-para-interpretar-ate-bula,1513195" target="_blank">"Brasileiro sofre pra interpretar até bula". Leia mais...</a></p>
+                        <p><a href="http://www.gazetadopovo.com.br/saude/consumidor-ajuda-a-produzir-bula-facil-de-ler-e-de-entender-bjbwv2w0o4335ig16tqjoyuku" target="_blank">"Consumidor ajuda a produzir bula fácil de ler e de entender". Leia mais...</a></p>
+                </div>
+            </aside>
+            <!-- Fim Lateral-->
+        </div>
+    </div>
+
+    <!-- Fim Corpo-->
+    <!-- Começo Rodape-->
+    <div class="bgrodape">
+        <footer class="container-fluid">
+
+            <div class="row-fluid">
+                <div class="span12">
+                    <figure class="rodape">
+                        <img src="imagens/logo.jpg" alt="foto-logo" class="img-circle">
+                    </figure>
+                    <h2>Consulta.Med</h2>
+                    <address class="endereco">
+                        <p><small>Fone.: (82) 8852-8654</small> </p>
+                        <p><small>Email.: ta_ta-olhardigital@hotmail.com</small> </p>
+                        <p><small>Satuba - AL</small> </p>
+                        <p class="copy"><small>Copyright &copy; 2015 - by Flávio S S</small></p>
+                        <!-- essa função voltar ao topo foi cancelada
+                        <a href="javascript:toTop();" title="Para o alto, e avante!" class="pull-right" /><small><img src="imagens/img-seta.png" alt="foto-seta" class="img-circle seta"></a></small>
+						-->
+                    </address>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Fim Rodape-->
+    </div>
+	
+	<style type="text/css">
+		#backtopo {
+		display: scroll;
+		position: fixed;
+		top: 43px;
+		right: 10px;
+		}
+		.subir{width: 50px;height: 50px;}
+	</style>
+	<div id="backtopo">
+		<a href="#" title="Back to Top"><img src="imagens/backtop.png" class="subir" /></a>
+	</div>
+
+	<script>
+	$(document).ready(function(){
+		
+		// hide #back-top first
+		$('#backtopo').hide();
+		   
+		// fade in #back-top
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 150) {
+					$('#backtopo').fadeIn();
+				} else {
+					$('#backtopo').fadeOut();
+				}
+			});
+
+			// scroll body to 0px on click
+			$('#backtopo').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+
+	});
+	
+	</script>
+	<!-- função voltar ao topo
+    <script type="text/javascript">
+    function toTop(){
+    $('html, body').animate({
+    scrollTop: 0
+    }, 1000, 'linear');
+    }
+    </script>
+	-->
+</body>
+</html>

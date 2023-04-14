@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/img-med-ico.ico"/>
+
+    <title>Consulta.Med</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <!-- BOOTSTRAP JS e JQuery-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    <!-- início cantainer -->
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+
+                <!-- início do modal e jumbotron subhead -->
+
+                <section id="modal">
+                    <header class="jumbotron subhead">
+                        <div class="container">
+                            <h1>Consulta<wbr>.Med - <small class="text-info">A sua consulta de medicamentos diária!</small></h1>
+                            <p>Este site faz pesquisas de medicamentos e ajuda ao usuário na descrição do produto com foco na <span class="text-info">bula</span>, sem aquelas letrinhas difíceis de enxergar e também sem toda formalidade de cada produto com descrição fácil de entender.</p>
+                            <br /><br />
+                            <form action="tabela-produto.html" class="well-large"id="busca">
+                                <div class="input-append">
+                                    <input type="text" class="form-search input-xxlarge" placeholder="Digite o nome do medicamento" id="pesquisa"/>
+                                    <button type="submit" class="btn-large btn-info">Buscar</button>
+                                </div>
+                            </form><br />
+                            <p>Pesquise ou faça login para acessar o sistema!</p>
+                            <p><a href="#MeuModal" class="btn btn-primary btn-large" role="button" data-toggle="modal">Clique e confira</a></p>
+                            <br /><br /><br /><br />
+                        </div>
+                    </header>
+                    <section id="MeuModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="meuModalLabel" aria-hidden="true">
+                        <header class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                            <h3 id="meuModalLabel">Logar no Sistema - <a href="admin.html"><small class="text-info">como administrador</small></a></h3>
+                        </header>
+                        <section class="modal-body">
+                            <form action="" class="form-horizontal">
+                                <img src="imagens/img-login.png" class="img-circle" alt="imagen login">
+                                <div class="control-group">
+                                    <label for="inputEmail" class="control-label">Email</label>
+                                    <div class="controls">
+                                        <input type="email" id="inputEmail" placeholder="email@exemplo.com" autofocus/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="inputPassword" class="control-label">Senha</label>
+                                    <div class="controls">
+                                        <input type="password" id="inputPassword" placeholder="000000" autofocus/><br />
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="remember-me" checked="checked"> Continuar conectado
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <footer class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+                            <a href="index.html"><button type="button" class="btn btn-primary" data-loading-text="Loading...">Entrar</button></a>
+                        </footer>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("button").click(function() {
+            var $btn = $(this);
+            $btn.button('loading');
+            // simulating a timeout
+            setTimeout(function () {
+                $btn.button('reset');
+            }, 1000);
+        });
+    </script>
+    <!-- chamar modal no inicio da página
+    <script type="text/javascript">
+        $('#MeuModal').modal('show')
+    </script>
+    -->
+</body>
+</html>

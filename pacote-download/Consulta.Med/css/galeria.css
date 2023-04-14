@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* formatando span8 */
+.bloco1{
+    padding: 20px;
+}
+/* formatando span4 */
+aside.bloco2 {
+    padding: 20px;
+}
+/* formatando corpo */
+body{
+    padding-top: 26px;
+}
+p{
+    text-align: justify;
+}
+/* formatando logo e o topo */
+.topo {
+    background-color: #333;
+    color: #f8f8f8;
+}
+.logo{
+    padding: 20px;
+}
+figure.logo{
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+header.topo h1{
+    padding-top: 10px;
+}
+/* formatando span rede social */
+img.social {
+    width: 80px;
+    height: 80px;
+    float: left;
+    opacity: 0.9;
+    padding-left: 3.5px;
+}
+/* formatando album de fotos */
+
+ul#album-fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .6s ease-in;
+	-moz-transition: all .6s ease-in;
+	-ms-transition:  all .6s ease-in;
+}
+
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background: url("../imagens/img-foto01.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto02{
+    background: url("../imagens/img-foto02.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03{
+    background: url("../imagens/img-foto03.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+/* formatando rodape */
+.bgrodape {
+    background-color: #333;
+    color: #f8f8f8;
+}
+.copy{
+    text-align: center;
+}
+.seta{
+    width: 40px;
+    height: 40px;
+}
+figure.rodape{
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+/* formatando  placeholder */
+::-webkit-input-placeholder { font-style:italic; }
+::-moz-placeholder { font-style:italic; } /* firefox 19+ */
+:-ms-input-placeholder { font-style:italic; } /* ie */
+input:-moz-placeholder { font-style:italic; }

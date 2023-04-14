@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/img-med-ico.ico"/>
+
+    <title>Consulta.Med</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <!-- BOOTSTRAP JS e JQuery-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <!--Inicio do modal, Cabeçalho de Navegação e Unidade Herói -->
+
+        <section id="modal">
+            <div class="heroi">
+                <header class="page-header">
+                    <h1>Consulta.Med - <small class="text-info">A sua consulta de medicamentos diária!</small></h1>
+                </header>
+                <aside class="hero-unit">
+                    <h1>Venha conhecer</h1>
+                    <p>Faça seu login para prosseguir!</p>
+                    <p><a href="#MeuModal" class="btn btn-primary btn-large" role="button" data-toggle="modal">Clique e confira</a></p>
+                </aside>
+            </div>
+            <section id="MeuModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="meuModalLabel" aria-hidden="true">
+                <header class="modal-header">
+                    <a href="login.html"><button class="close">x</button></a>
+                    <h3 id="meuModalLabel">Logar no Sistema - <a href="login.html"><small class="text-info">como usuário</small></a></h3>
+                </header>
+                <section class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <img src="imagens/img00.jpg" class="img-circle" alt="imagem login">
+                        <div class="control-group">
+                            <label for="inputEmail" class="control-label">Email</label>
+                            <div class="controls">
+                                <input type="email" id="inputEmail" placeholder="email@exemplo.com" required autofocus />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                        <label for="inputPassword" class="control-label" >Senha</label>
+                        <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="000000" required/><br /><br />
+                            <input type="password" id="inputPassw" placeholder="Confirmar senha Admin" required/><br />
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me" checked="checked"> Continuar conectado
+                            </label>
+                        </div>
+                    </div>
+
+                    </form>
+                </section>
+
+                <footer class="modal-footer">
+                    <small class="alert alert-error">ATENÇÃO!! Logar <strong>como usuário</strong> voltará para login usuário.</small>
+                    <a href="login.html"><button class="btn">Fechar</button></a>
+                    <a href="index-adm.html"><button type="button" class="btn btn-primary" data-loading-text="Loading...">Entrar</button></a>
+                </footer>
+            </section>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $("button").click(function() {
+            var $btn = $(this);
+            $btn.button('loading');
+            // simulating a timeout
+            setTimeout(function () {
+                $btn.button('reset');
+            }, 1000);
+        });
+
+        $('#MeuModal').modal('show')
+    </script>
+
+</body>
+</html>
